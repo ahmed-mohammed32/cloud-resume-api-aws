@@ -14,7 +14,7 @@
         "region": "N/A (For privacy reasons)"
       },
       "profiles": [{
-        "network": "Linkedin",
+        "network": "LinkedIn",
         "username": "ahmed-mohammed-158b07131",
         "url": "https://www.linkedin.com/in/ahmed-mohammed-158b07131/"
       }]
@@ -36,7 +36,7 @@
     "education": [{
       "institution": "University of Minnesota Duluth",
       "area": "Computer Science",
-      "studyType": "Bachelor",
+      "studyType": "Bachelors",
       "startDate": "2016-08-26",
       "endDate": "2020-12-14"
     }],
@@ -87,4 +87,3 @@
       "url": "https://github.com/ahmed-mohammed32/microservices-python-app-v2"
     }]
   }
-  

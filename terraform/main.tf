@@ -15,3 +15,26 @@ resource "aws_dynamodb_table" "dynamodb_table" {
   }
   tags = var.tags
 }
+
+# Create a Lambda function
+resource "aws_lambda_function" "lambda_function" {
+  function_name = var.function_name
+  description   = var.lambda_description
+  filename      = "../lambda.py"
+  runtime       = "python3.12"
+  handler       = "lambda.lambda_handler"
+  role          = aws_iam_role.lambda_exec_role.arn
+  environment {
+    variables = {
+      TABLE_NAME = aws_dynamodb_table.dynamodb_table.name
+      BUCKET_NAME = aws_s3_bucket.s3_bucket.bucket
+    }
+  }
+  tags = var.tags
+}
+
+# Attach policies to the IAM role for Lambda
+resource "aws_iam_role_policy_attachment" "attach_iam_policy_to_lambda_iam_role" {
+  role       = aws_iam_role.lambda_exec_role.name
+  policy_arn = aws_iam_policy.lambda_exec_policy.arn
+}

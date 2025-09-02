@@ -1,3 +1,4 @@
+# DynamoDB module for reusability (if needed in future)
 module "dynamodb_table" {
   source       = "terraform-aws-modules/dynamodb-table/aws"
   version      = "~> 5.0"

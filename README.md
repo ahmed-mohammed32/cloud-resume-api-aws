@@ -5,6 +5,7 @@ A project where I will build and deploy a serverless API using AWS Lambda and Dy
 - Construct an API that can serve resume data in a JSON format hosed in AWS
 
 ## Services used
+- S3 bucket: Stores state file per best Terraform practices
 - DynamoDB Table: Stores the resume in JSON format
 - Lambda Function (Python): Fetches and displays the resume data in json format from the DynamoDB Table
 - Github Actions: CI/CD pipeline to build infrastructure through Terraform when triggered

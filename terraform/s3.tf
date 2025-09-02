@@ -1,3 +1,4 @@
+# S3 module for reusability (if needed in future)
 module "s3_bucket" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "~> 5.0"

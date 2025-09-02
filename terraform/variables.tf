@@ -18,3 +18,15 @@ variable "tags" {
     environment = "dev"
   }
 }
+
+variable "function_name" {
+  description = "Lambda function name"
+  type        = string
+  default     = "cloud-resume-api-aws-lambda"
+}
+
+variable "lambda_description" {
+  description = "Description of the Lambda function"
+  type        = string
+  default     = "Lambda function for Cloud Resume API"
+}
