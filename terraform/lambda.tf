@@ -8,7 +8,7 @@ module "lambda_function" {
   handler       = "lambda.lambda_handler"
   runtime       = "python3.12"
 
-  source_path = "../lambda.py"
+  source_path = "../lambda"
 
   tags = var.tags
 }

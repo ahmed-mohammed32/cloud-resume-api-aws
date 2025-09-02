@@ -32,9 +32,3 @@ resource "aws_lambda_function" "lambda_function" {
   }
   tags = var.tags
 }
-
-# Attach policies to the IAM role for Lambda
-resource "aws_iam_role_policy_attachment" "attach_iam_policy_to_lambda_iam_role" {
-  role       = aws_iam_role.lambda_exec_role.name
-  policy_arn = aws_iam_policy.lambda_exec_policy.arn
-}
