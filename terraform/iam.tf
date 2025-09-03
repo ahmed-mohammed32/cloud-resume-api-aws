@@ -1,6 +1,6 @@
 # Create an IAM role for Lambda
 resource "aws_iam_role" "lambda_exec_role" {
-  name = "${var.function_name}-exec-role"
+  name = "${var.lambda_name}-exec-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -17,7 +17,7 @@ resource "aws_iam_role" "lambda_exec_role" {
 
 # Create a custom IAM policy for Lambda
 resource "aws_iam_policy" "lambda_exec_policy" {
-  name        = "${var.function_name}-policy"
+  name        = "${var.lambda_name}-policy"
   description = "IAM policy for Lambda execution"
   policy = jsonencode({
     Version = "2012-10-17"
@@ -46,7 +46,7 @@ resource "aws_iam_policy" "lambda_exec_policy" {
           "s3:GetObject",
           "s3:ListBucket"
         ]
-        Effect   = "Allow"
+        Effect = "Allow"
         Resource = [
           aws_s3_bucket.s3_bucket.arn,
           "${aws_s3_bucket.s3_bucket.arn}/*"

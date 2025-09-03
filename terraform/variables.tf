@@ -19,7 +19,7 @@ variable "tags" {
   }
 }
 
-variable "function_name" {
+variable "lambda_name" {
   description = "Lambda function name"
   type        = string
   default     = "cloud-resume-api-aws-lambda"
