@@ -6,7 +6,7 @@
     "email": {"S": "ahmedmoha3256@gmail.com"},
     "phone": {"S": "N/A (For privacy reasons)"},
     "url": {"S": ""},
-    "summary": {"S": "Hello, I'm Ahmed Mohammed, a passionate DevOps Engineer with expertise in cloud computing..."},
+    "summary": {"S": "Hello, I'm Ahmed Mohammed, DevOps Engineer with 3+ years of hands-on experience in automating, optimizing, and maintaining mission-critical deployments in cloud-based environments, including expertise in infrastructure as code (IaC), CI/CD pipelines, containerization, monitoring, and AWS. Proven ability to collaborate with cross-functional teams to streamline development, enhance system reliability, and accelerate software delivery cycles."},
     "location": {"M": {
       "address": {"S": "N/A (For privacy reasons)"},
       "postalCode": {"S": "N/A (For privacy reasons)"},
@@ -30,11 +30,11 @@
       "endDate": {"S": "2025-08"},
       "summary": {"S": "I"},
       "highlights": {"L": [
-        {"S": "Led the successful completion of a 3-year cloud migration project..."},
-        {"S": "Refactored legacy Chef cookbooks..."},
-        {"S": "Successfully migrated 400+ on-premise microservices..."},
-        {"S": "Developed and maintained CI/CD pipelines..."},
-        {"S": "Delivered 24/7 on-call support..."}
+        {"S": "Led the successful completion of a 3-year cloud migration project, transitioning enterprise infrastructure from an on-premises data center to AWS, resulting in improved system performance, cost efficiency, and scalability"},
+        {"S": "Refactored legacy Chef cookbooks to ensure compatibility and optimal performance with newly migrated AWS-based servers, improving configuration reliability and deployment efficiency"},
+        {"S": "Successfully migrated 400+ on-premise microservices, applications, and Linux environments to AWS, leveraging automation tools and IaC (Terraform & Chef) to reduce deployment time by 40%, improving system scalability and reliability"},
+        {"S": "Developed and maintained CI/CD pipelines using Jenkins ensuring seamless application deployments while achieving zero customer-facing downtime"},
+        {"S": "Delivered 24/7 on-call support for critical Linux-based infrastructure, ensuring rapid response and resolution of major incidents to maintain system uptime and reliability"}
       ]}
     }}
   ]},
