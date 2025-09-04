@@ -36,7 +36,7 @@ jobs:
       run: terraform validate
 
     - name: Format Terraform
-      run: terraform fmt -check -recursive
+      run: terraform fmt -check
 
     - name: Plan Terraform
       run: terraform plan -out=tfplan -input=false
