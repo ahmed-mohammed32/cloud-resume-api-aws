@@ -12,3 +12,8 @@ A project where I will build and deploy a serverless API using AWS Lambda and Dy
 
 # Project Architecture
 ![Project Architecture Diagram](cloud-resume-api-aws.png)
+
+# Lambda function URL
+- This function URL will display the resume JSON data, ensuring API calls are valid and a secure serverless connection is established for the client.
+
+https://dl3dtvigb6asdlitgnxgqrl65i0fdtmv.lambda-url.us-east-1.on.aws/
