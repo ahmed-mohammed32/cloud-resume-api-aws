@@ -3,31 +3,29 @@ import boto3
 import os
 
 def lambda_handler(event, context):
-    # Connect to DynamoDB
     dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table(os.environ['resume.json'])
+    table = dynamodb.Table(os.environ['TABLE_NAME'])
 
-    # Error handling for DynamoDB table access
     try:
-        # Get the the item from DynamoDB
-        response = table.get_item(Key={
-            'id': '1'
-            })
-        if 'Item' not in response:
+        response = table.get_item(Key={'id': '1'})
+        item = response.get('Item')
+
+        if not item:
             return {
                 'statusCode': 404,
-                'body': json.dumps('Resume not found')
+                'headers': {'Content-Type': 'application/json'},
+                'body': json.dumps({'error': 'Resume not found'})
             }
+
         return {
             'statusCode': 200,
-            'body': json.dumps(response['Item'])
+            'headers': {'Content-Type': 'application/json'},
+            'body': json.dumps(item)
         }
-    # Catch any exceptions and return an error message
+
     except Exception as e:
         return {
-            'statusCode': 400,
-            'headers': {
-                'Content-Type': 'application/json'
-            },
-            'body': json.dumps(f'Error accessing DynamoDB: {str(e)}')
+            'statusCode': 500,
+            'headers': {'Content-Type': 'application/json'},
+            'body': json.dumps({'error': f'Error accessing DynamoDB: {str(e)}'})
         }

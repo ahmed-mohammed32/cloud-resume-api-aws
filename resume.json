@@ -1,89 +1,104 @@
 {
-    "basics": {
-      "name": "Ahmed Mohammed",
-      "label": "DevOps Engineer",
-      "email": "ahmedmoha3256@gmail.com",
-      "phone": "N/A (For privacy reasons)",
-      "url": "",
-      "summary": "Hello, I'm Ahmed Mohammed, a passionate DevOps Engineer with expertise in cloud computing, automation, and infrastructure management. I thrive on optimizing development processes and enhancing system reliability. With a strong background in both development and operations, I bridge the gap between these two domains to deliver seamless and efficient solutions. My goal is to leverage my skills to drive innovation and efficiency in every project I undertake.",
-      "location": {
-        "address": "N/A (For privacy reasons)",
-        "postalCode": "N/A (For privacy reasons)",
-        "city": "N/A (For privacy reasons)",
-        "countryCode": "N/A (For privacy reasons)",
-        "region": "N/A (For privacy reasons)"
-      },
-      "profiles": [{
-        "network": "LinkedIn",
-        "username": "ahmed-mohammed-158b07131",
-        "url": "https://www.linkedin.com/in/ahmed-mohammed-158b07131/"
-      }]
-    },
-    "work": [{
-      "name": "Sonata Software/Bluestem Brands",
-      "position": "DevOps Engineer",
-      "startDate": "2023-04",
-      "endDate": "2025-08",
-      "summary": "I",
-      "highlights": [
-        "Led the successful completion of a 3-year cloud migration project, transitioning enterprise infrastructure from an on-premises data center to AWS, resulting in improved system performance, cost efficiency, and scalability",
-        "Refactored legacy Chef cookbooks to ensure compatibility and optimal performance with newly migrated AWS-based servers, improving configuration reliability and deployment efficiency.",
-        "Successfully migrated 400+ on-premise microservices, applications, and Linux environments to AWS, leveraging automation tools and IaC (Terraform & Chef) to reduce deployment time by 40%, improving system scalability and reliability.",
-        "Developed and maintained CI/CD pipelines using Jenkins ensuring seamless application deployments while achieving zero customer-facing downtime.",
-        "Delivered 24/7 on-call support for critical Linux-based infrastructure, ensuring rapid response and resolution of major incidents to maintain system uptime and reliability."
-      ]
-    }],
-    "education": [{
-      "institution": "University of Minnesota Duluth",
-      "area": "Computer Science",
-      "studyType": "Bachelors",
-      "startDate": "2016-08-26",
-      "endDate": "2020-12-14"
-    }],
-    "certificates": [{
-      "name": "AWS Cloud Practitioner",
-      "date": "2025-01-26",
-      "issuer": "AWS",
-      "url": "https://cp.certmetrics.com/amazon/en/credentials/status/3212553"
-    }],
-    "skills": [
-      {
-        "name": "Technical",
-        "level": "Intermediate",
-        "keywords": [
-          "Terraform",
-          "Chef",
-          "AWS",
-          "Jenkins",
-          "Docker"
-        ]
-      },
-      {
-        "name": "Monitoring",
-        "level": "Intermediate",
-        "keywords": [
-          "CloudWatch",
-          "DataDog",
-          "Dynatrace",
-          "SumoLogic",
-          "Rapid7"
-        ]
-      }
-    ],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
-    "references": [{
-      "name": "Allen Gorilla",
-      "reference": "Previous Manager at Bluestem Brands",
-      "phone": "(612)-209-3123"
-    }],
-    "projects": [{
-      "name": "Video to Audio Microservices App",
-      "startDate": "2025-04-01",
-      "endDate": "2021-04-16",
-      "description": "Deployed a scalable microservices-based application using Python, AWS EKS, Docker, and Helm, enabling video-to-audio conversion. Leveraged RabbitMQ for asynchronous processing and utilized MongoDB and PostgreSQL for efficient and scalable storage of video data",
-      "url": "https://github.com/ahmed-mohammed32/microservices-python-app-v2"
-    }]
-  }
+  "id": {"S": "1"},
+  "basics": {"M": {
+    "name": {"S": "Ahmed Mohammed"},
+    "label": {"S": "DevOps Engineer"},
+    "email": {"S": "ahmedmoha3256@gmail.com"},
+    "phone": {"S": "N/A (For privacy reasons)"},
+    "url": {"S": ""},
+    "summary": {"S": "Hello, I'm Ahmed Mohammed, a passionate DevOps Engineer with expertise in cloud computing..."},
+    "location": {"M": {
+      "address": {"S": "N/A (For privacy reasons)"},
+      "postalCode": {"S": "N/A (For privacy reasons)"},
+      "city": {"S": "N/A (For privacy reasons)"},
+      "countryCode": {"S": "N/A (For privacy reasons)"},
+      "region": {"S": "N/A (For privacy reasons)"}
+    }},
+    "profiles": {"L": [
+      {"M": {
+        "network": {"S": "LinkedIn"},
+        "username": {"S": "ahmed-mohammed-158b07131"},
+        "url": {"S": "https://www.linkedin.com/in/ahmed-mohammed-158b07131/"}
+      }}
+    ]}
+  }},
+  "work": {"L": [
+    {"M": {
+      "name": {"S": "Sonata Software/Bluestem Brands"},
+      "position": {"S": "DevOps Engineer"},
+      "startDate": {"S": "2023-04"},
+      "endDate": {"S": "2025-08"},
+      "summary": {"S": "I"},
+      "highlights": {"L": [
+        {"S": "Led the successful completion of a 3-year cloud migration project..."},
+        {"S": "Refactored legacy Chef cookbooks..."},
+        {"S": "Successfully migrated 400+ on-premise microservices..."},
+        {"S": "Developed and maintained CI/CD pipelines..."},
+        {"S": "Delivered 24/7 on-call support..."}
+      ]}
+    }}
+  ]},
+  "education": {"L": [
+    {"M": {
+      "institution": {"S": "University of Minnesota Duluth"},
+      "area": {"S": "Computer Science"},
+      "studyType": {"S": "Bachelors"},
+      "startDate": {"S": "2016-08-26"},
+      "endDate": {"S": "2020-12-14"}
+    }}
+  ]},
+  "certificates": {"L": [
+    {"M": {
+      "name": {"S": "AWS Cloud Practitioner"},
+      "date": {"S": "2025-01-26"},
+      "issuer": {"S": "AWS"},
+      "url": {"S": "https://cp.certmetrics.com/amazon/en/credentials/status/3212553"}
+    }}
+  ]},
+  "skills": {"L": [
+    {"M": {
+      "name": {"S": "Technical"},
+      "level": {"S": "Intermediate"},
+      "keywords": {"L": [
+        {"S": "Terraform"},
+        {"S": "Chef"},
+        {"S": "AWS"},
+        {"S": "Jenkins"},
+        {"S": "Docker"}
+      ]}
+    }},
+    {"M": {
+      "name": {"S": "Monitoring"},
+      "level": {"S": "Intermediate"},
+      "keywords": {"L": [
+        {"S": "CloudWatch"},
+        {"S": "DataDog"},
+        {"S": "Dynatrace"},
+        {"S": "SumoLogic"},
+        {"S": "Rapid7"}
+      ]}
+    }}
+  ]},
+  "languages": {"L": [
+    {"M": {
+      "language": {"S": "English"},
+      "fluency": {"S": "Native speaker"}
+    }}
+  ]},
+  "references": {"L": [
+    {"M": {
+      "name": {"S": "Allen Gorilla"},
+      "reference": {"S": "Previous Manager at Bluestem Brands"},
+      "phone": {"S": "(612)-209-3123"}
+    }}
+  ]},
+  "projects": {"L": [
+    {"M": {
+      "name": {"S": "Video to Audio Microservices App"},
+      "startDate": {"S": "2025-04-01"},
+      "endDate": {"S": "2021-04-16"},
+      "description": {"S": "Deployed a scalable microservices-based application using Python, AWS EKS, Docker..."},
+      "url": {"S": "https://github.com/ahmed-mohammed32/microservices-python-app-v2"}
+    }}
+  ]}
+}
