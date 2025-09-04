@@ -97,7 +97,7 @@
       "name": {"S": "Video to Audio Microservices App"},
       "startDate": {"S": "2025-04-01"},
       "endDate": {"S": "2021-04-16"},
-      "description": {"S": "Deployed a scalable microservices-based application using Python, AWS EKS, Docker..."},
+      "description": {"S": "Deployed a scalable microservices-based application using Python, AWS EKS, Docker, and Helm, enabling video-to-audio conversion. Leveraged RabbitMQ for asynchronous processing and utilized MongoDB and PostgreSQL for efficient and scalable storage of video data"},
       "url": {"S": "https://github.com/ahmed-mohammed32/microservices-python-app-v2"}
     }}
   ]}
